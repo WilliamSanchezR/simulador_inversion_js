@@ -1,13 +1,10 @@
-@font-face {
-    font-family: 'Montserrat'; 
-    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
-}
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 #simulator{
@@ -22,10 +19,10 @@
 h1{
     font-size: 34px;
     font-weight: 700;
-    color: #1c9882;
+    color: #09ff00;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid #000000;
 }
 
 .cont-flex{
@@ -40,7 +37,7 @@ h1{
 }
 
 h2{
-    color: #202d37;
+    color: #09ff00;
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 14px;
@@ -48,7 +45,7 @@ h2{
 
 .left p{
     margin-bottom: 30px;
-    color: #2f3c46;
+    color: #000000;
 }
 
 form{
@@ -79,7 +76,7 @@ form{
 .group-data label{ 
     display: block;
     margin-bottom: 10px;
-    color: #202d37;
+    color: #09ff00;
 }
 .group-data input,
 .group-data select{
@@ -92,7 +89,7 @@ form button{
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: #1c9882;
+    background: #09ff00;
     color: #fff;
     border: 1px solid #1c9882;
     transition: .4s;
@@ -107,9 +104,9 @@ form button:hover{
 
 input, select{
     padding: 14px 30px;
-    background: #f5f8fa;
+    background: #09ff0083;
     border: 0;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid #000000;
     outline: none;
 }
 input::placeholder {
