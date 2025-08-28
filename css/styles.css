@@ -5,6 +5,7 @@
     padding: 10px;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    background: #00120B;
 }
 
 #simulator{
@@ -16,13 +17,17 @@
     box-shadow: 0 0 3em #dfdfdf;
 }
 
+:placeholder-shown {
+    color: #fff;
+}
+
 h1{
     font-size: 34px;
     font-weight: 700;
-    color: #09ff00;
+    color: #FFEB66;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #fff;
 }
 
 .cont-flex{
@@ -37,7 +42,7 @@ h1{
 }
 
 h2{
-    color: #09ff00;
+    color: #FFEB66;
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 14px;
@@ -45,7 +50,7 @@ h2{
 
 .left p{
     margin-bottom: 30px;
-    color: #000000;
+    color: #fff;
 }
 
 form{
@@ -76,7 +81,7 @@ form{
 .group-data label{ 
     display: block;
     margin-bottom: 10px;
-    color: #09ff00;
+    color: #FFEB66;
 }
 .group-data input,
 .group-data select{
@@ -89,11 +94,12 @@ form button{
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: #09ff00;
+    background: #FFEB66;
     color: #fff;
     border: 1px solid #1c9882;
     transition: .4s;
     cursor: pointer;
+    font-size: 30px;
 }
 
 form button:hover{
@@ -104,9 +110,9 @@ form button:hover{
 
 input, select{
     padding: 14px 30px;
-    background: #09ff005b;
+    background: #FFEB665b;
     border: 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #fff;
     outline: none;
 }
 input::placeholder {
@@ -147,13 +153,13 @@ input::placeholder {
 }
 
 .right .post-simulation h3 span{
-    color: #09ff00;
+    color: #FFEB66;
     font-weight: 600;
     font-size: 24px;
 }
 
 .right .total{
-    background: #09ff0041;
+    background: #FFEB6641;
     padding: 30px;
 }
 
@@ -176,7 +182,7 @@ input::placeholder {
 
 .notificacion{
     padding: 20px;
-    border: 1px solid #09ff00;
+    border: 1px solid #FFEB66;
     margin-top: 40px;
 }
 
@@ -186,4 +192,20 @@ input::placeholder {
 
 .notificacion h5 span{
     font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+footer h2 {
+    margin-left: 40%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFEB66;
+    margin-top: 10px;
 }
