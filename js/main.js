@@ -5,10 +5,6 @@ function simulador (){
     const contPre = document.getElementById("pre-simulation");
     const contPost = document.getElementById("post-simulation");
 
-    contPost.classList.remove('disabled');
-
-    contPre.classList.add('disabled');
-
     // Variables que capturan los valores de los campos
 
     let cNombre = document.getElementById("nombre").value;
@@ -31,7 +27,11 @@ function simulador (){
     if (cNombre =="" || cEmail == "" || cTelefono == "" || cMonto == "" || cTiempo == "") {
 
         alert("Llene todos los campos porfavor");
-    } else {}
+    } else {
+    contPost.classList.remove('disabled');
+
+    contPre.classList.add('disabled');
+    }
 
     // variables para realizar los calculos 
 
