@@ -26,6 +26,13 @@ function simulador (){
     const sNombre = document.getElementById("sNombre");
     const sEmail = document.getElementById("sEmail");
 
+    // Agregamos condicionales para que no queden espacios vacios em el formulario de inversion
+
+    if (cNombre =="" || cEmail == "" || cTelefono == "" || cMonto == "" || cTiempo == "") {
+
+        alert("Llene todos los campos porfavor");
+    } else {}
+
     // variables para realizar los calculos 
 
     let ganancia = 0
