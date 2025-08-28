@@ -31,13 +31,6 @@ function simulador (){
     contPost.classList.remove('disabled');
 
     contPre.classList.add('disabled');
-    }
-
-    // variables para realizar los calculos 
-
-    let ganancia = 0
-    let total = 0
-
     switch (cTiempo) {
 
         // en este case realizaremos el calculo si el tiempo corresponde a un año
@@ -68,6 +61,14 @@ function simulador (){
         sGanancia.textContent= ganancia;
         sNombre.textContent= cNombre;
         sEmail.textContent= cEmail;
+    }
+
+    // variables para realizar los calculos 
+
+    let ganancia = 0
+    let total = 0
+
+
 }
 
 
