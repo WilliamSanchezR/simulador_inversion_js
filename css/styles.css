@@ -114,6 +114,7 @@ input, select{
     border: 0;
     border-bottom: 2px solid #fff;
     outline: none;
+    color: white;
 }
 input::placeholder {
     color: #000; /* Cambia este valor al color que desees */
@@ -146,7 +147,7 @@ input::placeholder {
 }
 
 .right .post-simulation h3{
-    color: #202d37;
+    color: white;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 40px;
@@ -165,6 +166,7 @@ input::placeholder {
 
 .right .total h4{
     font-size: 28px;
+    color: white;
 }
 
 .right .total h2{
@@ -174,6 +176,7 @@ input::placeholder {
 
 .total p{
     font-weight: 400;
+    color: white;
 }
 
 .total p span{
@@ -188,6 +191,7 @@ input::placeholder {
 
 .notificacion h5{
     font-weight: 400;
+    color: white;
 }
 
 .notificacion h5 span{
