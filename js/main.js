@@ -22,6 +22,11 @@ function simulador (){
     const sNombre = document.getElementById("sNombre");
     const sEmail = document.getElementById("sEmail");
 
+    // Variables para hacer calculos 
+
+    let ganancia = 0;
+    let total = 0;
+
     // Agregamos condicionales para que no queden espacios vacios em el formulario de inversion
 
     if (cNombre =="" || cEmail == "" || cTelefono == "" || cMonto == "" || cTiempo == "") {
@@ -31,45 +36,59 @@ function simulador (){
     contPost.classList.remove('disabled');
 
     contPre.classList.add('disabled');
+    }
     switch (cTiempo) {
+        case "1":
+            //EN ESTE CASE REALIZAREMOS EL CALCULO SI EL TIEMPO CORRESPONDE A 1 AÑO
+            ganancia = (cMonto * 0.008) * 12;
+            total = parseInt(cMonto) + parseInt(ganancia);
 
-        // en este case realizaremos el calculo si el tiempo corresponde a un año
-        case '1':
-            ganancia = (cMonto * 0.008)*12;
-            total = parseInt(ganancia) + parseInt(cMonto);
-            sInteres.textContent= '0,8';
-            sTiempo.textContent= '12 MESES';
+            sTotal.textContent = total;
+            sGanancia.textContent = ganancia;
+
+            sInteres.textContent = "0.8%";
+            sTiempo.textContent = "12 MESES";
+
+            sNombre.textContent = cNombre;
+            sEmail.textContent = cEmail;
+
             break;
 
-        case '2':
-            ganancia = (cMonto * 0.013)*24;
-            total = parseInt(ganancia) + parseInt(cMonto)
-            sInteres.textContent= '1,3';
-            sTiempo.textContent= '24 MESES';
+        case "2":
+            //EN ESTE CASE REALIZAREMOS EL CALCULO SI EL TIEMPO CORRESPONDE A 2 AÑOS
+            ganancia = (cMonto * 0.013) * 24;
+            total = parseInt(cMonto) + parseInt(ganancia);
+
+            sTotal.textContent = total;
+            sGanancia.textContent = ganancia;
+
+            sInteres.textContent = "1.3%";
+            sTiempo.textContent = "24 MESES";
+
+            sNombre.textContent = cNombre;
+            sEmail.textContent = cEmail;
             break;
 
-        case '3':
-            ganancia = (cMonto * 0.017)*36;
-            total = parseInt(ganancia) + parseInt(cMonto)
-            sInteres.textContent= '1,7';
-            sTiempo.textContent= '36 MESES';
+        case "3":
+            //EN ESTE CASE REALIZAREMOS EL CALCULO SI EL TIEMPO CORRESPONDE A 3 AÑO
+            ganancia = (cMonto * 0.017) * 36;
+            total = parseInt(cMonto) + parseInt(ganancia);
+
+            sTotal.textContent = total;
+            sGanancia.textContent = ganancia;
+
+            sInteres.textContent = "1.7%";
+            sTiempo.textContent = "36 MESES";
+
+            sNombre.textContent = cNombre;
+            sEmail.textContent = cEmail;
             break;
-        default:
-            break;
+
+        }
+
+
     }
-        sTotal.textContent= total;
-        sGanancia.textContent= ganancia;
-        sNombre.textContent= cNombre;
-        sEmail.textContent= cEmail;
-    }
 
-    // variables para realizar los calculos 
-
-    let ganancia = 0
-    let total = 0
-
-
-}
 
 
 document.addEventListener("DOMContentLoaded", function () {
